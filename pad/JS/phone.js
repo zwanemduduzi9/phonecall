@@ -4,7 +4,7 @@ var socket = new JsSIP.WebSocketInterface('wss://chats-development.smartz-soluti
 var configuration = {
   sockets  : [ socket ],
   uri      : 'sip:12345@chats-development.smartz-solutions.com',
-  password : 'superpassword'
+  password : '12345@chats'
 };
 
 var ua = new JsSIP.UA(configuration);
@@ -20,11 +20,11 @@ ua.on('unregistered', function(e){ ua.register();
 ua.on('registrationFailed', function(e){
  // var re=e;
   //console.log('registetionFailed')
-  //document.getElementById('rgf').innerHTML='registetionFailed';
+  document.getElementById('rgf').innerHTML='registetionFailed';
  });
 
 
- // console.log(reg);
+ 
   ua.register();
 
 
@@ -76,4 +76,4 @@ function call(number){
  
  
  
- 
+
