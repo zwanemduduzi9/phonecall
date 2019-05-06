@@ -20,8 +20,13 @@ ua.on('unregistered', function(e){ ua.register();
 ua.on('registrationFailed', function(e){
  // var re=e;
   //console.log('registetionFailed')
-  document.getElementById('rgf').innerHTML='registetionFailed';
+  // document.getElementById('rgf').innerHTML='registetionFailed';
  });
+
+
+  // ua.stop();
+ 
+
 
 
  

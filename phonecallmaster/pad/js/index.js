@@ -1,4 +1,5 @@
 var count = 0;
+ua.start();
 
 $(".digit").on('click', function() {
   var num = ($(this).clone().children().remove().end().text());
@@ -14,8 +15,8 @@ $('.fa-long-arrow-left').on('click', function() {
   count--;
 });
 
-$('.botrow').on('click', function() {
-  
+$('.w3-button w3-small').on('click', function() {
+  document.getElementById("button").disabled = 'true';
 
   
 });

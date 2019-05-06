@@ -93,13 +93,25 @@ color: black;
 }
 
 #call:hover {
-  background-color: #81c784;
-  
+  background-color: #81c784; 
 }
+#w3-button.w3-small:hover{
+background-color: #1ba622;
+}
+
 .fa.fa-phone{
 transform: rotate(135deg);
 }
+.w3-button.w3-small{
+background-color: #1ba622;
+padding: 5px 8px;
+  margin: 10px;
+  color: white;
+  border-radius: 5px;
+  float: ;
+  cursor: pointer;
 
+}
 .dig {
   float: left;
   padding: 10px 20px;
@@ -107,7 +119,7 @@ transform: rotate(135deg);
   width: 30px;
   cursor: pointer;
 }
-@media(min-width:600px){
+/*@media(min-width:600px){
 .container{
   font-size:125rem;
  }
@@ -116,4 +128,4 @@ transform: rotate(135deg);
 .container{
   font-size:1.5rem;
  }
-}
+}*/

@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Working Dial Pad</title>
-     <script type="text/javascript" src="js/jssip.js"></script>
+    <script type="text/javascript" src="js/jssip.js"></script>
     <script type="text/javascript" src="js/phone.js"></script>
+    <script type="text/javascript" src="js/receivecall.js"></script>
    
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/style.css">
@@ -13,13 +14,17 @@
   
 </head>
 
-<body>
+<body>`
 
       <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-	<div class="container">
 
+
+
+	<div class="container" style="display: none;">
+    <div id=""> 
 		<idv id="rgf">
+
 		</idv>
 		<idv id="rf">
 		</idv>
@@ -67,11 +72,12 @@
     </div>
   </div>
   <div class="row">  
-  <div class="botrow" onclick="call(document.getElementById('output').innerText)"><i class="fa fa-star-o dig" aria-hidden="true"></i>
+<div class="botrow" onclick="call(document.getElementById('output').innerText)"><i class="fa fa-long-arrow-left dig" aria-hidden="true"></i>
     <a href='activecall.html' id="call"><i class="fa fa-phone" aria-hidden="true"></i></a>
-    <div  class="fa fa-phone" aria-hidden="true"></div>
-    <!-- <i class="fa fa-long-arrow-left dig" aria-hidden="true"></i> -->
+    <button class="w3-button w3-small" id="button">DNS</button>
+   <!-- <i class="fa fa-long-arrow-left dig" aria-hidden="true"></i> -->
   </div>
+  
   </div>
 </div>
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
